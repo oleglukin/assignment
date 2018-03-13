@@ -10,21 +10,22 @@ This is a .Net Core app. So to build and run it make sure you have .Net Core ins
 
 ### To run the console app 
 Navigate to the code library:  
-```cd ./code```
+```cd ./code```  
 Then restore dependencies and build it:  
 ```dotnet restore```  
 ```dotnet build```  
 Then run the app:  
 ```dotnet run```  
-This should output something like this:  
-```Creating cache with maximum of 4 elements.
+This should output something like this:    
+```
+Creating cache with maximum of 4 elements.
 Found value 1: True
 Found value 2: True
 Found value : False
 Found value : False
 Found value 22: True
 Found value 5: True
-Press Enter...```
+Press Enter...```  
 
 ### To run the unit tests
 Navigate to the test folder from the parent folder:
