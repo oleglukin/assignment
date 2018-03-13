@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/assignment.csproj"
+                "${workspaceFolder}/code/code.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/assignment.csproj"
+                "${workspaceFolder}/code/code.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
