@@ -25,13 +25,16 @@ Found value : False
 Found value : False
 Found value 22: True
 Found value 5: True
-Press Enter...```  
+Press Enter...
+```  
 
 ### To run the unit tests
-Navigate to the test folder from the parent folder:
-```cd ./assignment_test```
-Restore and build:
-```dotnet restore
-dotnet build```
-Run the test:
+Navigate to the test folder from the parent folder:  
+```cd ./assignment_test```  
+Restore and build:  
+```
+dotnet restore
+dotnet build
+```
+Run the test:  
 ```dotnet test```
