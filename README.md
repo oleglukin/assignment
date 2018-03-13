@@ -10,7 +10,7 @@ This is a .Net Core app. So to build and run it make sure you have .Net Core ins
 
 ### To run the console app 
 Navigate to the code library:
-```cd ./code``
+```cd ./code```
 Then restore dependencies and build it:
 ```dotnet restore
 dotnet build```
