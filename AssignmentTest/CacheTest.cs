@@ -4,9 +4,9 @@ using Xunit;
 
 namespace AssignmentTest
 {
-    public class UnitTest1
+    public class CacheTest
     {
-        private int val;
+        private int? val;
         [Fact]
         public void Test1()
         {
@@ -20,7 +20,6 @@ namespace AssignmentTest
             cache.AddOrUpdate("three", 3);
             cache.AddOrUpdate("four", 4);
 
-            int? val = 0;
 
             // Try to get first element from the cache, make sure it exists there
             bool found = cache.TryGetValue("one", out val);

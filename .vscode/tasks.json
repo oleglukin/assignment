@@ -7,17 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/code/code.csproj"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "build",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/code/code.csproj"
+                "${workspaceFolder}/Assignment/Assignment.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -15,28 +15,28 @@ namespace Assignment
             cache.AddOrUpdate("three", 3);
             cache.AddOrUpdate("four", 4);
 
-            int? val = 0;
+            int? val = null;
             bool found = cache.TryGetValue("one", out val);
-            Console.WriteLine("Found value {0}: {1}", val, found);
+            Console.WriteLine("Looking for '{0}'. Found: {1}, value: {2}", "one", found, val);
 
             found = cache.TryGetValue("two", out val);
-            Console.WriteLine("Found value {0}: {1}", val, found);
+            Console.WriteLine("Looking for '{0}'. Found: {1}, value: {2}", "two", found, val);
 
             found = cache.TryGetValue("five", out val);
-            Console.WriteLine("Found value {0}: {1}", val, found);
+            Console.WriteLine("Looking for '{0}'. Found: {1}, value: {2}", "five", found, val);
 
 
             cache.AddOrUpdate("five", 5);
             cache.AddOrUpdate("two", 22);
 
-            found = cache.TryGetValue("one", out val);
-            Console.WriteLine("Found value {0}: {1}", val, found);
+            found = cache.TryGetValue("three", out val);
+            Console.WriteLine("Looking for '{0}'. Found: {1}, value: {2}", "three", found, val);
 
             found = cache.TryGetValue("two", out val);
-            Console.WriteLine("Found value {0}: {1}", val, found);
+            Console.WriteLine("Looking for '{0}'. Found: {1}, value: {2}", "two", found, val);
 
             found = cache.TryGetValue("five", out val);
-            Console.WriteLine("Found value {0}: {1}", val, found);
+            Console.WriteLine("Looking for '{0}'. Found: {1}, value: {2}", "five", found, val);
             
 
             Console.WriteLine("Press Enter...");
