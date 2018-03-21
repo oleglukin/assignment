@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace assignment
+namespace Assignment
 {
     public class Cache<TKey, TValue> : ICache<TKey, TValue>
     {
@@ -53,12 +53,22 @@ namespace assignment
         /// </summary>
         public bool TryGetValue(TKey key, out TValue value)
         {
+            DateTime now = new DateTime();
             bool found = false;
             lock (values)
             {
                 var element = values.Where(e => e.Item1.Equals(key)).FirstOrDefault();
-                found = (element != null) ? true : false;
-                value = (element != null) ? element.Item2 : default(TValue);
+                if (element != null)
+                {
+                    found = true;
+                    value = element.Item2;
+                    values.Remove(values.Where(e => e.Item1.Equals(key)).First());
+                    values.Add(Tuple.Create(key, value, now));
+                }
+                else
+                {
+                    value = default(TValue);
+                }
             }
             return found;
         }

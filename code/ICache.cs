@@ -1,5 +1,5 @@
 
-namespace assignment
+namespace Assignment
 {
     public interface ICache<TKey, TValue>
     {

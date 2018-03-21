@@ -1,8 +1,8 @@
 using System;
-using assignment;
+using Assignment;
 using Xunit;
 
-namespace assignment_test
+namespace AssignmentTest
 {
     public class UnitTest1
     {
