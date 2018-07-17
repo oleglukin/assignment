@@ -1,5 +1,4 @@
-# Assignment
-Test assignment for Fone Dynamics. In-memory cache 
+In-memory cache 
 
 ## Folder Structure:
 **./code** - this is the actual code folder. Includes ICache interface, Cache class that implements that interface, and simple console app (Program.cs) that uses that Cache.  
